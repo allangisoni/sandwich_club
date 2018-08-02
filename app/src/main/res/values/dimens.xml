@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_detail_cvelevation">8dp</dimen>
+    <dimen name="activity_detail_cvmargin">16dp</dimen>
+    <dimen name="activity_detail_tvpadding">8dp</dimen>
+    <dimen name="activity_detail_tvmargin">5dp</dimen>
+    <dimen name="activity_detail_tvtextsize">14sp</dimen>
+    <dimen name="activity_detail_tvlabeltextsize">14dp</dimen>
+</resources>

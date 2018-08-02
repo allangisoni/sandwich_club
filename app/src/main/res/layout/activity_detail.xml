@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.udacity.sandwichclub.DetailActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/image_iv"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/sandwich_picture_content_description"
+        android:scaleType="centerCrop"/>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/detail_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_iv"
+        android:elevation="@dimen/activity_detail_cvelevation"
+        android:layout_margin="@dimen/activity_detail_cvmargin"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/llAlias"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/tvaliaslabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detail_also_known_as_label"
+                    android:textStyle="bold"
+                    android:padding="@dimen/activity_detail_tvpadding"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/activity_detail_tvlabeltextsize"/>
+
+                <TextView
+                    android:id="@+id/alias_tv"
+                    android:layout_toRightOf="@id/tvaliaslabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/detail_also_known_as_labelhint"
+                    android:padding="@dimen/activity_detail_tvpadding"
+                    android:layout_weight="2"
+                    android:textSize="@dimen/activity_detail_tvtextsize"/>
+            </LinearLayout>
+
+             <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/llAlias"
+                    android:orientation="horizontal"
+                    android:id="@+id/llPlaceofOrigin"
+                 android:weightSum="3">
+
+                 <TextView
+                    android:id="@+id/tvPlaceofOriginLabel"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                     android:text="@string/detail_place_of_origin_label"
+                    android:textStyle="bold"
+                     android:padding="@dimen/activity_detail_tvpadding"
+                     android:layout_weight="1"
+                     />
+
+    <TextView
+        android:id="@+id/origin_tv"
+        android:layout_toRightOf="@id/tvPlaceofOriginLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/detail_place_of_origin_labelhint"
+        android:padding="@dimen/activity_detail_tvpadding"
+        android:layout_weight="2"
+        />
+
+</LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/llPlaceofOrigin"
+                android:id="@+id/llIngredients"
+                android:weightSum="3">
+
+
+                <TextView
+                    android:id="@+id/tvingredientslabel"
+                    android:text="@string/detail_ingredients_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:padding="@dimen/activity_detail_tvpadding"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/ingredients_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/detail_ingredients_labelhint"
+                    android:layout_toRightOf="@id/tvingredientslabel"
+                    android:padding="@dimen/activity_detail_tvpadding"
+                    android:layout_weight="2"/>
+            </LinearLayout>
+
+
+
+
+
+            <View
+                android:id="@+id/viewhorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimary"
+                android:layout_below="@id/llIngredients" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/viewhorizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvdescriptionlabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detail_description_labelhint"
+                    android:layout_marginTop="@dimen/activity_detail_tvmargin"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:id="@+id/description_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/detail_description_labelhint"
+                    android:padding="@dimen/activity_detail_tvpadding"
+                    android:layout_alignParentLeft="true"
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
+</ScrollView>
+
+
+
