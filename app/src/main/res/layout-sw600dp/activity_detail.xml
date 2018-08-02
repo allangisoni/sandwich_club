@@ -15,13 +15,10 @@
     <ImageView
         android:id="@+id/image_iv"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/activity_detail_ivheight"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
+        android:layout_height="@dimen/activity_detail_ivtabletheight"
         android:adjustViewBounds="true"
         android:contentDescription="@string/sandwich_picture_content_description"
-        android:scaleType="centerCrop" />
+        android:scaleType="centerCrop"/>
 
 
     <android.support.v7.widget.CardView
